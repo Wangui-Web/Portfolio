@@ -1,0 +1,114 @@
+.contactUsContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactForm {
+  height: 70%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(219, 55, 5);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(56, 56, 56, 0.8);
+  padding: 20px;
+}
+.contactSubContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.contactUsLabel {
+  color: white;
+  margin-bottom: 5px;
+}
+.contactUsInput,
+.contactUsText {
+  width: 70%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(219, 55, 5);
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+}
+.contactUsInput {
+  height: 40px;
+}
+.contactUsText {
+  height: 100px;
+}
+.contactUsButton {
+  width: 65%;
+  height: 40px;
+  background-color: rgb(219, 55, 5);
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transform: scale(1);
+  transition: transform 500ms ease-in;
+}
+.contactUsMainTitle {
+  position: relative;
+  text-align: center;
+  margin: 10px auto;
+  width: 30%;
+  z-index: 1;
+  color: white;
+}
+.contactUsMainTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(219, 55, 5);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 300ms ease-in;
+}
+.contactUsMainTitle:hover::after {
+  transform: scaleX(1);
+}
+.contactUsCopyright {
+  color: white;
+  letter-spacing: 1px;
+}
+.contactUsButton:hover {
+  background-color: white;
+  color: rgb(20, 20, 20);
+  transform: scale(1.1);
+}
+/* Media Queries */
+@media only screen and (max-width: 750px) {
+  .contactForm {
+    height: 90%;
+    width: 95%;
+    padding: 10px;
+  }
+  .contactForm p {
+    text-align: center;
+  }
+  .contactUsMainTitle {
+    width: 50%;
+    font-size: 30px;
+  }
+  .contactUsContainer {
+    padding-top: 10px;
+  }
+}

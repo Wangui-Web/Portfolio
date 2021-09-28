@@ -1,0 +1,128 @@
+.aboutContainer {
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+}
+.aboutTitle {
+  width: 40%;
+  position: relative;
+  margin: 0px 20px;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+}
+.aboutMainTitle {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 10px auto;
+  width: 30%;
+  z-index: 1;
+}
+.aboutTitle::after,
+.aboutMainTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(219, 55, 5);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 500ms ease-in;
+}
+.aboutTitle::after {
+  height: 1px;
+}
+.aboutMainTitle::after {
+  height: 100%;
+}
+.aboutTitle:hover::after,
+.aboutMainTitle:hover::after {
+  transform: scaleX(1);
+}
+
+.aboutMe {
+  background-color: rgb(219, 55, 5);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+}
+.aboutMe h2::after,
+.aboutTechnologies h2::after {
+  background-color: rgb(20, 20, 20);
+}
+.aboutJob {
+  background-color: rgb(20, 20, 20);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
+  margin-bottom: -5vw;
+}
+.aboutTechnologies {
+  background-color: rgb(219, 55, 5);
+}
+.aboutMe,
+.aboutJob,
+.aboutTechnologies {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 280px;
+}
+.aboutMe p,
+.aboutJob li {
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+.aboutMe p {
+  width: 50%;
+}
+.aboutSubTech {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.aboutTechIcons {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  transform: scale(1.4);
+  transition: transform 250ms ease-in;
+}
+.aboutTechIcons p:hover {
+  transform: scale(1.7);
+  transition: transform 250ms ease-in;
+}
+/* Media Queries. */
+@media only screen and (max-width: 750px) {
+  .aboutMe,
+  .aboutJob,
+  .aboutTechnologies {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  .aboutMe {
+    min-height: 400px;
+  }
+  .aboutJob {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .aboutTechnologies {
+    min-height: 400px;
+  }
+  .aboutTitle {
+    font-size: 22px;
+  }
+  .aboutMainTitle {
+    width: 50%;
+    font-size: 30px;
+  }
+}

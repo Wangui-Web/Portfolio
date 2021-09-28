@@ -1,0 +1,31 @@
+.navContainer {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.navMenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 55%;
+}
+.navMenuUl {
+  list-style: none;
+}
+.navMenuLi {
+  cursor: pointer;
+}
+.navMenuLi:hover {
+  color: rgb(219, 55, 5);
+  transform: scale(1.2);
+  transition: transform 350ms ease-in;
+}
+/* Media Queries. 
+@media only screen and (max-width: 600px){
+  
+}*/
