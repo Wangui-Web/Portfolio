@@ -1,6 +1,7 @@
 .heroContainer {
   display: flex;
-  min-height: 100vh;
+  width: 100%;
+  min-height: calc(100vh - 80px);
   background: linear-gradient(
     to bottom,
     rgba(50, 50, 50, 0.1),
@@ -8,18 +9,14 @@
     rgba(30, 30, 30, 0.7),
     rgba(20, 20, 20, 0.9)
   );
-  /* background-image: url("../public/images/background.jpg"); */
 }
 .myPic {
   background-image: url("../public/images/hello.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 0 auto;
   width: 40%;
   height: 450px;
-  /* box-shadow: -8px 10px rgb(219, 55, 5);
-  border-radius: 50%; */
 }
 .socialMedia {
   width: 60px;
@@ -42,17 +39,17 @@
   transform: scale(1.5);
   transition: transform 500ms ease-in-out;
 }
-
 .descriptionRight {
-  width: 100%;
+  width: calc(100% - 60px);
   height: calc(100vh - 80px);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-left: 15px;
 }
 .description {
   width: 55%;
-  height: 70%;
+  min-height: 70%;
   display: flex;
   padding-right: 5px;
   flex-direction: column;
@@ -114,14 +111,21 @@
     transform: scale(1.4);
   }
   .heroContainer {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    position: relative;
   }
   .descriptionRight {
+    width: 100%;
     display: flex;
     flex-direction: column;
+  }
+  .description {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
   }
   .myPic {
     width: 0;

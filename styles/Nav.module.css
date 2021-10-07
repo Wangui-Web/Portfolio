@@ -17,8 +17,7 @@
   color: rgb(219, 55, 5);
 }
 .resumeContainer {
-  max-width: 250px;
-  min-width: 150px;
+  width: 250px;
   height: 40px;
   background-color: rgb(219, 55, 5);
   cursor: pointer;
@@ -31,24 +30,10 @@
 .resumeContainer:hover {
   transform: scale(1.1);
 }
-.navMenu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 55%;
+
+/* Media Queries. */
+@media only screen and (max-width: 600px) {
+  .resumeContainer {
+    width: 150px;
+  }
 }
-.navMenuUl {
-  list-style: none;
-}
-.navMenuLi {
-  cursor: pointer;
-}
-.navMenuLi:hover {
-  color: rgb(219, 55, 5);
-  transform: scale(1.2);
-  transition: transform 350ms ease-in;
-}
-/* Media Queries. 
-@media only screen and (max-width: 600px){
-  
-}*/

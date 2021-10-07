@@ -44,12 +44,16 @@
 .contactUsInput {
   height: 40px;
 }
+.contactUsInput:focus {
+  background-color: transparent;
+}
 .contactUsText {
   height: 100px;
 }
 .contactUsButton {
   width: 65%;
   height: 40px;
+  color: white;
   background-color: rgb(219, 55, 5);
   border: none;
   outline: none;
@@ -100,9 +104,21 @@
     height: 90%;
     width: 95%;
     padding: 10px;
+    font-size: 20px;
   }
   .contactForm p {
     text-align: center;
+  }
+  .contactUsInput,
+  .contactUsButton {
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+  }
+  .contactUsText {
+    width: 90%;
+    font-size: 20px;
+    height: 120px;
   }
   .contactUsMainTitle {
     width: 50%;
@@ -110,5 +126,9 @@
   }
   .contactUsContainer {
     padding-top: 10px;
+  }
+  .contactUsCopyright {
+    padding: 3px 5px;
+    text-align: center;
   }
 }

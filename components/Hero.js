@@ -29,7 +29,7 @@ const Hero = () => {
                     <h1 className={styles.name}>Christine <span className={ styles.spanName}>Wangui </span>.</h1>
                     <h3 className={styles.job}>A Full-Stack Web Developer</h3>
                     <div>
-                    <p className={styles.details}>Hello there! I design,develop and maintain amazing and interactive websites for you.</p>
+                        <p className={styles.details}>Hello there! I design,develop and maintain amazing and interactive websites for you.</p>
                         <p className={styles.details}>Take a look at my work and be the judge.</p>
                     </div>    
                 </div>
