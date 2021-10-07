@@ -1,12 +1,35 @@
 .navContainer {
   width: 100%;
   height: 80px;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(24, 24, 24);
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+}
+.navName {
+  transform: scale(1);
+  transition: transform 250ms ease-in-out;
+}
+.navName:hover {
+  transform: scale(1.2);
+  color: rgb(219, 55, 5);
+}
+.resumeContainer {
+  max-width: 250px;
+  min-width: 150px;
+  height: 40px;
+  background-color: rgb(219, 55, 5);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: transform 250ms ease-in;
+}
+.resumeContainer:hover {
+  transform: scale(1.1);
 }
 .navMenu {
   display: flex;

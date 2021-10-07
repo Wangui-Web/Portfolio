@@ -100,7 +100,7 @@
   .aboutJob,
   .aboutTechnologies {
     width: 100%;
-    min-height: 400px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
