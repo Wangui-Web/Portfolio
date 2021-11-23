@@ -13,7 +13,7 @@ export const screenShotData = [
         alt:"Movies Project app",
         link:"https://movies-72dc9.web.app/",
         gitlink: "https://github.com/Wangui-Web/Movie-app",
-        details:"A movies app where you get to view your latest movies and series. I used React.JS and IMdb API. I also grew my CSS3 skills."
+        details:"A movies app where you get to view your latest movies and series.I learnt how to use third party APIs to fetch data. I used React.JS and IMdb API. I also grew my CSS3 skills."
     },
     {
         image:"/images/pizzaScreenshot.png",
@@ -30,5 +30,21 @@ export const screenShotData = [
         link:"#",
         gitlink: "https://github.com/Wangui-Web/Records",
         details:"This is a store management app. I used Vanilla.JS and Bootstrap for front-end and PHP for backend."
+    },
+    {
+        image: "/images/pokemon.png",
+        id:Math.floor(Math.random() *2000000),
+        alt: "Pokemon app",
+        link:"https://its-pokemon-time.web.app/",
+        gitlink: "https://github.com/Wangui-Web/Pokemon",
+        details:"An app where one can search and learn more about their favourite pokemon. I learnt how to use third party APIs to fetch and handle data. I used React.JS and PokeAPI."
+    },
+    {
+        image: "/images/churchill.png",
+        id:Math.floor(Math.random() *2000000),
+        alt: "Churchill Booking Ticket System app",
+        link:"https://churchill-ticket-booking.web.app/",
+        gitlink: "https://github.com/Wangui-Web/Churchill",
+        details:"This is a comedy show ticket booking system. I used React JS for frontend and Firebase for backend."
     },
 ]
